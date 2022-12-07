@@ -9,5 +9,10 @@ let seriesDB = {
 };
 console.log(seriesDB.count);
 
-const lastSerie = prompt("Ohirgi korgan serialingiz?");
-let yourMark = prompt("Necha baho berasiz?");
+const lastSerie = prompt("Ohirgi korgan serialingiz?"),
+ yourMark = prompt("Necha baho berasiz?"),
+ lastSeries = prompt("Ohirgi korgan serialingiz?"),
+ yourMarks = prompt("Necha baho berasiz?");
+seriesDB.series.lastSerie = yourMark;
+seriesDB.series.lastSeries = yourMarks;
+
