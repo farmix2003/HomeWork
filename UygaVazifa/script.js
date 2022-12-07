@@ -1,5 +1,6 @@
 "use strict";
 let numOfSeries = +prompt("Nechta serial kordingiz?","");
+
 let seriesDB = {
  count: numOfSeries,
  series: {},
@@ -7,13 +8,25 @@ let seriesDB = {
  geners: [],
  privat: false,
 };
-console.log(seriesDB.count);
+// console.log(seriesDB.count);
+if(seriesDB.count <= 5){
+console.log("Kam serial koribsiz");
+}else if(seriesDB.count >=5 && seriesDB.count <=10){
+    console.log("Siz classic tomoshabin ekansiz");
+}else if(seriesDB.count >= 15){
+    console.log("Siz zvezda ekansz");
+}
 
-const lastSerie = prompt("Ohirgi korgan serialingiz?"),
-      yourMark = prompt("Necha baho berasiz?"),
-      lastSeries = prompt("Ohirgi korgan serialingiz?"),
-      yourMarks = prompt("Necha baho berasiz?");
-seriesDB.series[lastSerie] = yourMark;
-seriesDB.series[lastSeries] = yourMarks;
+
 console.log(seriesDB);
-
+for(let i = 1; i<=2; i++){
+    const lastSerie = prompt("Ohirgi korgan serialingiz?"),
+    yourMark = prompt("Necha baho berasiz?");
+    if(lastSerie != null && yourMark != null && lastSerie != "" && yourMark != ""){
+    seriesDB.series[lastSerie] = yourMark;
+    console.log("Done");
+}else{
+  console.log("Error!");
+  i--;
+}
+}
