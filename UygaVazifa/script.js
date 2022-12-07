@@ -13,7 +13,7 @@ const lastSerie = prompt("Ohirgi korgan serialingiz?"),
       yourMark = prompt("Necha baho berasiz?"),
       lastSeries = prompt("Ohirgi korgan serialingiz?"),
       yourMarks = prompt("Necha baho berasiz?");
-seriesDB.series.lastSerie = yourMark;
-seriesDB.series.lastSeries = yourMarks;
+seriesDB.series[lastSerie] = yourMark;
+seriesDB.series[lastSeries] = yourMarks;
 console.log(seriesDB);
 
