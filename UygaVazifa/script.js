@@ -15,4 +15,5 @@ const lastSerie = prompt("Ohirgi korgan serialingiz?"),
  yourMarks = prompt("Necha baho berasiz?");
 seriesDB.series.lastSerie = yourMark;
 seriesDB.series.lastSeries = yourMarks;
+console.log(seriesDB);
 
